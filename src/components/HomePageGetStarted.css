@@ -1,0 +1,40 @@
+.HomePagGetStartedContainer {
+    padding: 100px 300px;
+}
+
+.GetStartedImageDiv {
+    background-image: url('../images/img06.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 50%;
+    display: inline-block;
+}
+
+.GetStartedTextDiv {
+    width: 50%;
+    display: inline-block;
+    background-color: #161619;
+    float: right;
+    height: 545px;
+    padding: 150px 80px;
+}
+
+.GetStartedTextDivHeading {
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    display: block;
+}
+
+.GetStartedTextDivDesc {
+    display: block;
+    color: white;
+    font-size: 24px;
+}
+
+.GetStartedTextDivButton {
+    display: block;
+}
+
+

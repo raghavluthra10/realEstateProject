@@ -1,0 +1,46 @@
+
+
+.btn--medium {
+    width: 400px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn--small {
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn--wide {
+    width: 600px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.black {
+    background-color: #161619;
+    color: white;
+    border: 1px solid white;
+}
+
+.white {
+    background-color: white;
+    color: #161619;
+    border: black;
+}
+
+.black:hover{
+    background-color: #630000;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.white:hover{
+    background-color: #161619;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}

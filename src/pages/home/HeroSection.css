@@ -1,0 +1,35 @@
+.heroContainer {
+    background-image: url('../../images/buildings_view1.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+.heroHeading {
+    font-size: 42px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    display: block;
+    
+}
+
+.heroSectionSearchListings{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.heroSectionSubmitButton {
+    width: 100px !important;
+    background-color: black;
+    color:  rgba(255, 255, 255, 0.699);
+}
+
+.heroSectionSearchListings form input {
+    line-height: 40px;
+    width: 600px;
+    font-size: 18px;
+}

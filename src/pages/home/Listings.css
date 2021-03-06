@@ -1,0 +1,19 @@
+.listingsContainer {
+    padding: 50px 200px;
+
+}
+
+.listingsHeading {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.listingsHeadingSub {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+

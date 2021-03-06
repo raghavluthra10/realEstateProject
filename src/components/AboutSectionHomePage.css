@@ -1,0 +1,52 @@
+.aboutSectionHomePageContainer {
+    height: 900px; 
+    padding: 100px 200px 100px 0px;
+    /* background-color: violet; */
+}
+
+.aboutSectionHomePageReadMoreCard {
+    width: 60vw;
+    padding: 50px 100px;
+    color: black;
+    box-shadow: -3px -3px 10px 1px rgb(145, 144, 144);
+    transform: translate(0px, 150px);
+    float: inline-start;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+
+}
+
+.aboutSectionHomePageReadMoreCardHeading {
+    font-size: 38px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.aboutSectionHomePageReadMoreCardDesc {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.readMoreButton {
+    display: block;
+}
+
+.aboutSectionHomePageReadMoreBgImage {
+    background-image: url('../images/aboutSectionPhtooot.png');
+    height: 700px;
+    width: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: top;
+    transform: translate(870px, 0px);
+    position: absolute;
+    z-index: 0;
+    float: right;
+}
+
+
+
+

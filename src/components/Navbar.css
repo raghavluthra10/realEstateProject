@@ -1,0 +1,30 @@
+.navbarContainer {
+    background-color: #161619;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 50px;
+}
+
+.navbarLogo {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.menuItemsDiv {
+    display: inline-block;
+    float: right;
+    color: rgba(255, 255, 255, 0.699);
+    
+}
+
+.menuItemsList li {
+    display: inline;
+    margin-left: 50px;
+}
+
+
+a:link,  a:visited,   a:active,   a:hover  {
+    color: rgba(255, 255, 255, 0.699);
+    text-decoration: none;
+  }
+
