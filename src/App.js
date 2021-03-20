@@ -6,6 +6,7 @@ import ContactUs from './pages/contactus/ContactUs';
 import ListingsPage from './pages/listings/ListingsPage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PropertyState from './context/PropertyState';
+import FullInfo from './pages/Fullinfo/FullInfo';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/aboutus' exact > <AboutUs  /> </Route>
           <Route path='/listings' exact > <ListingsPage  /> </Route>
           <Route path='/contactus' exact > <ContactUs  /> </Route>  
+          <Route path='/fullInformation' exact > <FullInfo /> </Route>  
         </PropertyState>
       </Switch>
     </Router>

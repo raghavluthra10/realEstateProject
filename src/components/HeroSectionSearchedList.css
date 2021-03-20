@@ -1,0 +1,26 @@
+.listSearch {
+    color: azure;
+    font-size: 18px;
+    line-height: 48px;
+    margin-top: 2px !important;
+    background: black;
+    width: 700px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+.listSearch button {
+    float: right;
+    display: inline;
+    color: black;
+    position: relative;
+}
+
+.searchedListDetail{
+    display: inline;
+    overflow: hidden;
+    width: 300px;
+    text-overflow: ellipsis;
+}
+
+

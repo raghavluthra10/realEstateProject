@@ -20,6 +20,7 @@
     text-align: center;
     margin-top: 50px;
     width: 100%;
+
 }
 
 .heroSectionSubmitButton {
@@ -33,3 +34,10 @@
     width: 600px;
     font-size: 18px;
 }
+
+.listSearchedContainer {
+    overflow-y: scroll;
+    height: 300px;
+
+}
+
