@@ -1,1 +1,29 @@
- 
+.listingsPageUltimateContainer {
+    padding: 120px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 120px;
+}
+
+.listingsPageContainer {
+    display: block;
+    width: 400px;
+    box-shadow:
+    0 3.4px 3.6px rgba(0, 0, 0, 0.035),
+    0 9.5px 10px rgba(0, 0, 0, 0.05),
+    0 22.9px 24.1px rgba(0, 0, 0, 0.065),
+    0 76px 80px rgba(0, 0, 0, 0.1);
+ }
+
+ .listingsPagePhoto {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+ }
+
+ .listingsPageInfoContainer {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 10px;
+    height: 120px;
+ }

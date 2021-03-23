@@ -1,26 +1,23 @@
 .listSearch {
-    color: azure;
     font-size: 18px;
-    line-height: 48px;
+    line-height: 40px;
     margin-top: 2px !important;
-    background: black;
-    width: 700px;
+    background: rgb(22,22,25);
+    width: 600px;
     padding-left: 20px;
     margin: auto;
-}
-
-.listSearch button {
-    float: right;
-    display: inline;
-    color: black;
-    position: relative;
+    overflow: hidden;
 }
 
 .searchedListDetail{
     display: inline;
-    overflow: hidden;
-    width: 300px;
+    color: whitesmoke;
+    overflow-y: scroll;
     text-overflow: ellipsis;
+}
+
+.listSearch:hover {
+    background-color: rgb(39, 39, 39);
 }
 
 

@@ -1,18 +1,34 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
+import { FullInfoContext } from '../../FullInfoContext/FullInfoState';
 import './FullInfo.css';
-import { PropertyContext } from '../../context/PropertyState';
 
 
 
 const FullInfo = () => {
 
-    const [ details, setDetails ] = useContext(PropertyContext)
+    const [ fullInfo, setFullInfo ] = useContext(FullInfoContext)
 
+   
     return (
         <div>
-            {details}
+            <h1>
+               {fullInfo.address}
+            </h1>
         </div>
     )
 }
 
 export default FullInfo
+
+
+//address
+// baths
+//beds
+//photo
+// price
+// prop_type
+//sqft
+//property_id
+
+
+// add a pop-up button for view-scheduling. when clicked asks for email, name, day and time.

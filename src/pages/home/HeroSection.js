@@ -9,11 +9,6 @@ const HeroSection = () => {
     const [ text, setText ] = useState('')
 
 
-    const clearSearch = e => {
-        e.preventDefault();
-        setText('');
-    }
-
     const editSearchterm = e => {
         e.preventDefault()
         setText(e.target.value)
@@ -30,11 +25,8 @@ const HeroSection = () => {
 
                 <div className='heroSectionSearchListings'>
                     <form>
-                        <input type='text' value={text} onChange={editSearchterm} placeholder='Address...'  />
-                        <input type='submit' value='Clear' className='heroSectionSubmitButton' onClick={clearSearch} />
+                        <input type='text' value={text} onChange={editSearchterm} placeholder='Search for city...'  />
                     </form>   
-
-                    {details.length > 0 && console.log(details)}
                 </div>
                 
             

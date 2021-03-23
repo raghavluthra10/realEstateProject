@@ -36,8 +36,9 @@
 }
 
 .listSearchedContainer {
-    overflow-y: scroll;
-    height: 300px;
+    overflow: hidden;
+    height: 380px;
+    box-sizing: content-box;
 
 }
 
