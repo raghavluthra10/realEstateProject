@@ -42,7 +42,8 @@ const AboutSectionHomePage = () => {
                     
             </div>
 
-            <div className='aboutSectionHomePageReadMoreBgImage' >
+            <div className='aboutSectionHomePageReadMoreBgImage'>
+                {/* <img src={require('../images/aboutSectionPhtooot.png')} alt=''  className='aboutSectionHomePageReadMoreBgImage' /> */}
             </div>
         </div>
     )

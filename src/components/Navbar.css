@@ -5,6 +5,10 @@
     line-height: 50px;
 }
 
+.navbarMobileMenu {
+    visibility: hidden;
+}
+
 .navbarLogo {
     display: inline-block;
     color: rgba(255, 255, 255, 0.699);

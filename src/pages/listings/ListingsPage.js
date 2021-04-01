@@ -7,6 +7,10 @@ import Button from '../../components/Button';
 
 const ListingsPage = (props) => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     const [ details, setDetails ] = useContext(PropertyContext);
 
     const [ fullInfo, setFullInfo ] = useContext(FullInfoContext);
@@ -18,7 +22,7 @@ const ListingsPage = (props) => {
 
             {details.map((info) => (
                 <>
-                    {info.map((detail) => (
+                    {info.slice(0,30).map((detail) => (
                                 <div className='listingsPageContainer'>
                                     
                                     <img src={detail.photo} className='listingsPagePhoto' alt={detail.address} />

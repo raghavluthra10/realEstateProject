@@ -1,0 +1,55 @@
+.modalContainer {
+    padding: 50px;
+    height: 60vh;
+    width: 50vw;
+    border: black solid 1px;
+    background-color: whitesmoke;
+    position: fixed;
+    transform: translate(-40%, -70%);
+    border-radius: 5px;
+
+}
+
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.473);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.modalCloseButton {
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modalFName, .modalLName {
+    display: inline;
+    line-height: 50px;
+    font-size: 14px;
+    width: 300px;
+    margin-bottom: 20px;
+    
+}
+
+.modalLName {
+    margin-left: 50px;
+}
+
+.modalEmail, .modalSubject, .modalMessage, .modalButton {
+    line-height: 50px;
+    font-size: 14px;
+    display: block;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.modalButton {
+    background-color: #161619;
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: 10px;
+    height: 50px;
+}

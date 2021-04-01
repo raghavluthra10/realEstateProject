@@ -1,0 +1,37 @@
+.contactUsContainer {
+    padding: 100px;
+    height: 100vh;
+}
+
+.contactUsHeader {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+
+.contactModalFName, .contactModalLName, .contactModalEmail, .contactModalSubject {
+    height: 45px;
+    margin-bottom: 30px;
+}
+
+.contactUsForm {
+    text-align: center;
+    
+}
+
+.contactModalFName, .contactModalLName {
+    display: inline ;
+    width: 300px !important;
+}
+
+.contactModalEmail, .contactModalSubject, .contactModalMessage {
+    display: block;
+    margin: auto;
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+.contactModalButton{
+    display: block;
+}
+

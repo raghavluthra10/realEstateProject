@@ -1,6 +1,8 @@
 .aboutSectionHomePageContainer {
     height: 900px; 
     padding: 100px 200px 100px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
     /* background-color: violet; */
 }
 
@@ -47,6 +49,26 @@
     float: right;
 }
 
+@media only screen and (max-width: 1600px) {
+    .aboutSectionHomePageReadMoreBgImage {
+        transform: translate(750px, 0px);
+    }
+}
 
 
 
+@media only screen and (max-width: 1500px) {
+    .aboutSectionHomePageReadMoreBgImage{
+        transform: translate(650px, 0px);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .aboutSectionHomePageReadMoreBgImage{
+        transform: translate(500px, 0px);
+    }
+
+    .aboutSectionHomePageReadMoreCard {
+        width: 50vw;        
+    }
+}

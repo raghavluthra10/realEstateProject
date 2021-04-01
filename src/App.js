@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PropertyState from './context/PropertyState';
 import FullInfo from './pages/Fullinfo/FullInfo';
 import FullInfoState from './FullInfoContext/FullInfoState'
+import Footer from './components/Footer';
 
 
 function App() {

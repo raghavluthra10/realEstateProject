@@ -1,0 +1,27 @@
+.aboutUsContainer {
+    padding: 200px;
+}
+
+.aboutUsHeader {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 80px;
+}
+
+.aboutUsOmegaEstates {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.aboutUsPara1 {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.aboutUsFirstParaDiv {
+    width: 1000px;
+    border: black solid 1px;
+    padding: 50px;
+}
