@@ -1,6 +1,14 @@
 .listingsContainer {
     padding: 50px 200px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-between;
 
+}
+
+.listings__component {
+    display: flex ;
+    /* flex-direction: column !important; */
 }
 
 .listingsHeading {

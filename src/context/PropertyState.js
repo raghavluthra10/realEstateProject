@@ -29,7 +29,7 @@ const PropertyState = (props) => {
             console.error(err);
         });
     }
-
+    console.log(details)
     
     return (
         <>
