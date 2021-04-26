@@ -1,23 +1,26 @@
 .HomePagGetStartedContainer {
-    padding: 100px 300px;
+    margin-top: 100px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    z-index: 99;
+    margin-bottom: 100px;
 }
 
 .GetStartedImageDiv {
-    background-image: url('../images/img06.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 600px;
-    width: 50%;
-    display: inline-block;
+    min-width: fit-content;
+    object-fit: contain;
+    flex: 0.48;
+    background-color: yellow;
+    overflow: hidden;
 }
 
 .GetStartedTextDiv {
-    width: 50%;
-    display: inline-block;
+    height: 526px;
+    padding: 100px 130px;
     background-color: #161619;
     float: right;
-    height: 545px;
-    padding: 150px 80px;
+    flex: 0.52;
 }
 
 .GetStartedTextDivHeading {
@@ -37,4 +40,6 @@
     display: block;
 }
 
+@media only screen and (max-width: 1350px) {
 
+}

@@ -25,7 +25,7 @@ const ListCards = ({ address, photo, price, sqft }) => {
             </div>
 
             <div className='listCards__button'>
-                <Button > Know More </Button>
+                <Button> Know More </Button>
             </div>
             
             

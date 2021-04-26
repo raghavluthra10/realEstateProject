@@ -1,34 +1,97 @@
-.navbarContainer {
+.navbarContainer{
     background-color: #161619;
-    padding-left: 100px;
-    padding-right: 100px;
-    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
 }
 
-.navbarMobileMenu {
-    visibility: hidden;
+.navBarMobileHandle {
+    position: absolute;
+    color: white;
+    display: none;
+    font-size: 26px !important;
+    right: 20px;
+    top: 8px;
 }
 
 .navbarLogo {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.699);
-}
-
-.menuItemsDiv {
-    display: inline-block;
-    float: right;
-    color: rgba(255, 255, 255, 0.699);
-    
-}
-
-.menuItemsList li {
-    display: inline;
     margin-left: 50px;
 }
 
+.menuItemsDiv > ul {
+    justify-content: flex-end;
+    display: flex;
 
-a:link,  a:visited,   a:active,   a:hover  {
-    color: rgba(255, 255, 255, 0.699);
+}
+
+.menuItemsDiv > ul > li {
+    margin-right: 50px;
     text-decoration: none;
+    list-style: none;
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .menuItems.active {
+        left: 0px;
+        transition: all 0.5s ease;
+    }
+
+    .menuItems {
+        display: flex;
+        flex-direction: column;
+        top: 60px;
+        left: -100%;
+        position: absolute;
+        background-color: #161619;
+        text-align: center;
+        width: 100%;
+        z-index: 99;
+        height: fit-content;
+        padding-top: 30px;
+        transition: all 0.5s ease;
+    }
+
+    .menuItems > li {
+        margin-bottom: 30px;
+    }
+
+    .navBarMobileHandle {
+        display: flex;
+        z-index: 100;
+    }
+
+
+}
+
+
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    opacity: 0.8;
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    opacity: 0.8;
+  }
+  
+  a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    opacity: 0.8;
+  }
+  
+  a:active {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    opacity: 0.8;
   }
 

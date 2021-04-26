@@ -1,74 +1,68 @@
 .aboutSectionHomePageContainer {
-    height: 900px; 
-    padding: 100px 200px 100px 0px;
-    display: grid;
-    grid-template-columns: auto auto;
-    /* background-color: violet; */
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 100px;
 }
 
 .aboutSectionHomePageReadMoreCard {
-    width: 60vw;
-    padding: 50px 100px;
-    color: black;
-    box-shadow: -3px -3px 10px 1px rgb(145, 144, 144);
-    transform: translate(0px, 150px);
-    float: inline-start;
-    position: absolute;
-    z-index: 1;
-    background-color: #FFFFFF;
-
-}
-
-.aboutSectionHomePageReadMoreCardHeading {
-    font-size: 38px;
-    font-weight: bolder;
-    margin-bottom: 50px;
-    display: block;
-}
-
-.aboutSectionHomePageReadMoreCardDesc {
-    display: block;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.readMoreButton {
-    display: block;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0.60;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    height: fit-content;
+    z-index: 99;
+    margin-top: 5%;
+    box-shadow: 0 22px 80px rgba(0, 0, 0, 0.22);
 }
 
 .aboutSectionHomePageReadMoreBgImage {
-    background-image: url('../images/aboutSectionPhtooot.png');
-    height: 700px;
-    width: 700px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: top;
-    transform: translate(870px, 0px);
-    position: absolute;
-    z-index: 0;
-    float: right;
+    flex: 0.40;
+    z-index: 98;
+    margin-left: -30px;
 }
 
-@media only screen and (max-width: 1600px) {
+.aboutSectionHomePageReadMoreBgImage > img {
+    height: fit-content;
+    width: 36vw;
+}
+
+.aboutSectionHomePageReadMoreCard > h2 {
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.aboutSectionHomePageReadMoreCard > h4 {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .aboutSectionHomePageContainer {
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-top: 10px;
+    }
+
+    .aboutSectionHomePageReadMoreCard > h2{
+        font-size: 20px !important;
+    }
+
+    .aboutSectionHomePageReadMoreCard > h4{
+        font-size: 16px !important;
+    }
+
     .aboutSectionHomePageReadMoreBgImage {
-        transform: translate(750px, 0px);
-    }
-}
-
-
-
-@media only screen and (max-width: 1500px) {
-    .aboutSectionHomePageReadMoreBgImage{
-        transform: translate(650px, 0px);
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .aboutSectionHomePageReadMoreBgImage{
-        transform: translate(500px, 0px);
+        display: flex;
+        align-self: center;
+        margin-left: 0px;
     }
 
-    .aboutSectionHomePageReadMoreCard {
-        width: 50vw;        
+    .aboutSectionHomePageReadMoreBgImage > img{
+        width: 70vw;
     }
 }

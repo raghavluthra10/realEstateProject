@@ -25,7 +25,7 @@ const Listings = () => {
             {details.map((info) => (
                 <>
                     {info.slice(0, 3).map((detail) => (
-                                <div>
+                                <div className='listings__component__div'>
                                     <ListCard  
                                     address= {detail.address}
                                     baths= {detail.baths}

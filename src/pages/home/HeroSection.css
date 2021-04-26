@@ -1,26 +1,42 @@
 .heroContainer {
     background-image: url('https://wallpapercave.com/wp/wp3594884.jpg');
+    background-position: center;
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 200px;
+    /* padding-top: 200px; */
+    margin-top: -20px;
+
 }
 
-.heroHeading {
-    font-size: 42px;
-    font-weight: bolder;
-    color: black;
-    text-align: center;
-    display: block;
+.hero__top {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.heroSectionSearchListings{
-    display: block;
+.heroHeading {
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
     text-align: center;
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 15vh;
+}
 
+.heroSectionSearchListings {
+    margin-top: 50px;
+}
+
+.heroSectionSearchListings > form > input{
+    border-radius: 3px;
+    width: 50vw;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    flex: 1;
+    border: none;
+    font-size: 18px;
 }
 
 .heroSectionSubmitButton {
@@ -29,16 +45,18 @@
     color:  rgba(255, 255, 255, 0.699);
 }
 
-.heroSectionSearchListings form input {
-    line-height: 40px;
-    width: 600px;
-    font-size: 18px;
-}
+
 
 .listSearchedContainer {
     overflow: hidden;
     height: 380px;
     box-sizing: content-box;
 
+}
+
+@media only screen and (max-width: 1200px) {
+    .heroSectionSearchListings > form > input {
+        width: 70vw;
+    }
 }
 

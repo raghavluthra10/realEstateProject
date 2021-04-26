@@ -6,12 +6,12 @@ const HomePageGetStarted = () => {
     return (
         <div className='HomePagGetStartedContainer'>
             <div className='GetStartedImageDiv'>
-                
+                <img src='https://www.wernewyork.com/Components/Home/Images/theme/img06.png' alt=''  />
             </div>
 
             <div className='GetStartedTextDiv'>
                 <span className='GetStartedTextDivHeading'>
-                    FIND YOUR AGENT
+                    FIND YOUR PROPERTY
                 </span>
                 <br />
                 <br />

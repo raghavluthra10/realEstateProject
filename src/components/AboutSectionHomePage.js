@@ -11,11 +11,11 @@ const AboutSectionHomePage = () => {
     return (
         <div className='aboutSectionHomePageContainer' >
             <div className='aboutSectionHomePageReadMoreCard'>
-                <span className='aboutSectionHomePageReadMoreCardHeading'>
+                <h2 className='aboutSectionHomePageReadMoreCardHeading'>
                     OMEGA ESTATES Here To Help You
-                </span>
+                </h2>
 
-                <span className='aboutSectionHomePageReadMoreCardDesc'>
+                <h4 className='aboutSectionHomePageReadMoreCardDesc'>
                     OMEGA ESTATES brings you the new standard in handling real estate transactions.  
                     With a brokerage built on family values and decades of experience, 
                     R New York thrives on the success of its valued clients and the network 
@@ -27,7 +27,7 @@ const AboutSectionHomePage = () => {
                     Your real estate experience is our business, and relationships are at the 
                     heart of everything we do.  Our sales agents cut through the city’s hustle 
                     and bustle to ensure your priorities always come first.
-                </span>
+                </h4>
 
                 <br/>
 
@@ -43,7 +43,7 @@ const AboutSectionHomePage = () => {
             </div>
 
             <div className='aboutSectionHomePageReadMoreBgImage'>
-                {/* <img src={require('../images/aboutSectionPhtooot.png')} alt=''  className='aboutSectionHomePageReadMoreBgImage' /> */}
+                <img src='https://www.wernewyork.com/Components/Home/Images/theme/img05.png' alt=''  />
             </div>
         </div>
     )

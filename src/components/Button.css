@@ -1,7 +1,7 @@
 
 
 .btn--medium {
-    width: 400px;
+    width: 20vw;
     height: 60px;
     font-size: 18px;
     font-weight: bold;
@@ -15,7 +15,7 @@
 }
 
 .btn--wide {
-    width: 600px;
+    width: 40vw;
     height: 60px;
     font-size: 18px;
     font-weight: bold;
@@ -43,4 +43,13 @@
     background-color: #161619;
     color: white;
     transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1300px) {
+    .btn--medium {
+        font-size: 18px;
+        width: 100%;
+    }
+
+
 }

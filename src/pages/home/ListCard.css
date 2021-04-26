@@ -1,4 +1,44 @@
-.listCard {
-    /* display: flex;
-    flex-direction: column; */
+.listCards {
+    min-height: 300px;
+    width: 20vw;
+    box-shadow:0 0.9px 5.3px rgba(0, 0, 0, 0.081),
+    0 3.1px 17.9px rgba(0, 0, 0, 0.119),
+    0 14px 80px rgba(0, 0, 0, 0.2);
+}
+
+.listCards__image {
+    object-fit: cover;
+    width: 20vw;
+    height: 300px;
+}
+
+.listCards__info{
+    height: 140px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1300px)  {
+    .listCards {
+        margin-bottom: 90px;
+        min-height: 350px !important;
+        width: 100%;
+        flex: 1;
+        left: 200px;
+    } 
+
+    .listCards__image {
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .listCards__info > h3 {
+        font-size: 18px !important;
+    }
+
+    .listCards__info > h4 {
+        font-size: 15px !important;
+    }
 }

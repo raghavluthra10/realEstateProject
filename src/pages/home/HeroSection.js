@@ -19,6 +19,7 @@ const HeroSection = () => {
     return (
         <h3>
         <div className='heroContainer'>
+            <div className='hero__top'>
                 <div className='heroHeading'>
                     We Are OMEGA ESTATES
                 </div>
@@ -28,6 +29,8 @@ const HeroSection = () => {
                         <input type='text' value={text} onChange={editSearchterm} placeholder='Search for city...'  />
                     </form>   
                 </div>
+            </div>
+                
                 
             
 
