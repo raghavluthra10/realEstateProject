@@ -8,42 +8,47 @@ import { FaFacebookSquare } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className='FooterContainer'>
-           <form className='footerForm'>
-               <input type='text' className='footerInputText' placeholder='email@example.com'  />
-               <input type='submit' className='footerInputSubmit' value='Sign Up'  />
-           </form>
+            <div className='footer__uperHalf' >
+                <div className='footer__formDiv' >
+                    <form className='footerForm'>
+                        <input type='text' className='footerInputText' placeholder='email@example.com'  />
+                        <input type='submit' className='footerInputSubmit' value='Sign Up'  />
+                    </form>
+                </div>
+                
+                <div className='footerMenuItems'>
+                    <ul className='footer__ulMenu'>
+                        <li>
+                            <Link to='/'> Home </Link>
+                        </li>
 
-            <div className='footerMenuItems'>
-                <ul>
-                    <li>
-                        <Link to='/'> Home </Link>
-                    </li>
+                        <li>
+                            <Link to='/listings' > Listings </Link>
+                        </li>
 
-                    <li>
-                        <Link to='/listings' > Listings </Link>
-                    </li>
+                        <li>
+                            <Link to='/aboutus'> About Us </Link> 
+                        </li>
 
-                    <li>
-                        <Link to='/aboutus'> About Us </Link> 
-                    </li>
-
-                    <li>
-                        <Link to='/contactus'> Contact Us </Link>
-                    </li>
-                </ul>
-        
+                        <li>
+                            <Link to='/contactus'> Contact Us </Link>
+                        </li>
+                    </ul>
+            
+                </div>
             </div>
+          
+            <div className='footer__lowerHalf'>
+                <div className='footerSocialMediaIcons'>
+                    <FaInstagramSquare  />
+                    <FaFacebookSquare />
+                    <FaTwitterSquare  />
+                </div>
 
-            <div className='footerSocialMediaIcons'>
-                <FaInstagramSquare  />
-                <FaFacebookSquare />
-                <FaTwitterSquare  />
+                <div className='footerTermsAndCondition'>
+                    Terms & Conditions | Privacy Policy 
+                </div>
             </div>
-
-            <div className='footerTermsAndCondition'>
-                Terms & Conditions | Privacy Policy 
-            </div>
-           
         </div>
     )
 } 

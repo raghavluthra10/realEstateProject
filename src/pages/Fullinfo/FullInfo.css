@@ -1,58 +1,103 @@
 .fullInfoContainer {
+    display: flex;
+    justify-content: space-between;
     padding: 100px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 50px;
-}
-
-.fullInfoImageDiv {
-    box-shadow:
-    0 3.4px 3.6px rgba(0, 0, 0, 0.035),
+    box-shadow: 0 3.4px 3.6px rgba(0, 0, 0, 0.035),
     0 9.5px 10px rgba(0, 0, 0, 0.05),
     0 22.9px 24.1px rgba(0, 0, 0, 0.065),
     0 76px 80px rgba(0, 0, 0, 0.1);
+}
+
+.fullInfoImageDiv {
+    width: 35vw;
+    /* background-color: yellow; */
+    object-fit: cover ;
+    object-position: center;
+}
+
+.fullInfoImageDiv > img {
+    width: 35vw ;
+    align-self: center;
 }
 
 .fullInfoDetailDiv {
     vertical-align: top;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 20px;
     height: 400px;
-    box-shadow:
-    0 3.4px 3.6px rgba(0, 0, 0, 0.035),
-    0 9.5px 10px rgba(0, 0, 0, 0.05),
-    0 22.9px 24.1px rgba(0, 0, 0, 0.065),
-    0 76px 80px rgba(0, 0, 0, 0.1);
 }
 
-.fullInfoContainer img {
-    height: 400px;
-    width: 600px;
-    object-fit: contain;
 
-}
 
 .fullInfo_price {
     font-size: 42px;
     font-weight: bold;
-    margin-bottom: 30px;
 }
 
 .fullInfo_bedBathSqft {
     font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .fullInfo_address {
     font-size: 14px;
-    margin-bottom: 10px;
-
 }
-
+s
 .fullinfo_propertyId {
-    margin-bottom: 110px;
     font-size: 14px;
 }
 
-.btn_scheduleViewing {
-    
+@media only screen and (max-width: 1200px)  {
+    .fullInfoContainer {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 800px;
+        padding: 50px;
+        }
+
+    .fullInfoImageDiv > img {
+        /* width: 100%; */
+        flex: 1;
+    }
+
+    .fullInfoImageDiv {
+        align-self: center;
+        width: 70vw;
+        display: flex;
+        
+    }
+
+    .fullInfo_price {
+        font-size: 26px;
+    }
+
+    .fullInfoDetailDiv {
+        height: 300px;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fullInfoImageDiv > img {
+        width: 70vw;
+    }
+
+    .fullInfoDetailDiv {
+        flex: 0.6;
+        ;
+    }
+
+    .fullInfoImageDiv {
+        flex: 0.4
+    }
+
+    .fullInfo_bedBathSqft {
+        font-size: 14px;   
+    }
+
+    .fullInfo_address, .fullinfo_propertyId {
+        font-size: 12px;
+    }
 }

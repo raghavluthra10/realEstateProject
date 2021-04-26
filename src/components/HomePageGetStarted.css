@@ -8,14 +8,16 @@
 }
 
 .GetStartedImageDiv {
-    min-width: fit-content;
+    min-width: 400px;
     object-fit: contain;
+    object-position: center;
     flex: 0.48;
     background-color: yellow;
     overflow: hidden;
 }
 
 .GetStartedTextDiv {
+    min-width: 400px;
     height: 526px;
     padding: 100px 130px;
     background-color: #161619;
@@ -41,5 +43,43 @@
 }
 
 @media only screen and (max-width: 1350px) {
-
+    .GetStartedTextDiv {
+        padding: 100px 50px;
+    }
 }
+
+@media only screen and (max-width: 1000px) {
+    .HomePagGetStartedContainer {
+        padding-right: 15vw;
+        padding-left: 15vw;
+    }
+    .HomePagGetStartedContainer {
+        flex-direction: column-reverse;
+    }
+    
+    .GetStartedTextDiv {
+        max-width: 525px;
+        min-width: 200px;
+        align-self: center;
+        padding: 70px 40px;
+    }
+
+    .GetStartedTextDivHeading {
+        font-size: 16px;
+    }
+
+    .GetStartedTextDivDesc {
+        font-size: 15px;
+    }
+
+    .GetStartedImageDiv > img {
+        width: 100%;
+    }
+
+    .GetStartedImageDiv {
+        align-self: center;
+        max-width: 525px;
+        min-width: 200px;
+    }
+}
+

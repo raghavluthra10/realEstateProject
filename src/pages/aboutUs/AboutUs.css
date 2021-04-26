@@ -1,27 +1,81 @@
-.aboutUsContainer {
-    padding: 200px;
+.aboutUsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    padding: 50px;
+    padding-bottom: 100px !important;
 }
 
-.aboutUsHeader {
-    text-align: center;
-    font-size: 52px;
-    margin-bottom: 80px;
+.aboutUs__upperHalf {
+    align-self: center;
+}
+
+.aboutUs__upperHalf > header {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.aboutUs__lowerHalf{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
 }
 
 .aboutUsOmegaEstates {
-    font-size: 30px;
-    font-weight: bold;
+    align-self: center;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .aboutUsPara1 {
-    margin-top: 40px;
     font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 1px;
+    align-self: center;
+    width: 60vw;
+    word-wrap: break-word;
 }
 
-.aboutUsFirstParaDiv {
-    width: 1000px;
-    border: black solid 1px;
-    padding: 50px;
+@media only screen and (max-width: 1100px) {
+    .aboutUsOmegaEstates {
+        font-size: 18px;
+    }
+
+    .aboutUsPara1{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .aboutUsPara1 {
+        width: 70vw;
+    }
+
+    .aboutUsContainer {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .aboutUsOmegaEstates {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .aboutUsContainer {
+        height: 500px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .aboutUsOmegaEstates {
+        width: 200px;
+    }
+
+    .aboutUsPara1 {
+        margin-bottom: 30px;
+        font-size: 14px !important;
+    }
+    
 }

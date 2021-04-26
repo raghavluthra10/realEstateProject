@@ -27,7 +27,7 @@ const Modal = (props) => {
                 <GiCancel className='modalCloseButton' onClick={props.onClose} />
                 
                 
-                <form onSubmit={sendEmail}>
+                <form className='modale__form' onSubmit={sendEmail}>
                     <input className='modalFName' name='fname' type='text' placeholder='First Name' />
                     <input className='modalLName'  name='lname' type='text' placeholder='Last Name' />
                     <input className='modalEmail'  name='email' type='text' placeholder='email@example.com' />
@@ -46,4 +46,3 @@ const Modal = (props) => {
 }
 
 export default Modal
-// date and time

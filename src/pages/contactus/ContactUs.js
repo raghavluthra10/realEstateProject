@@ -21,7 +21,7 @@ const ContactUs = () => {
 
     return (
         <>
-        <div className='contactUsContainer'>
+        <div className='contactUs'>
             <header className='contactUsHeader'> CONTACT US </header>
 
             <form onSubmit={sendEmail} className='contactUsForm'>
@@ -31,7 +31,7 @@ const ContactUs = () => {
                     <input className='contactModalSubject'  name='subject' type='text' placeholder='subject...' />
                     <textarea className='contactModalMessage'  name='message' type='text' placeholder='Your Message...' />
                    
-                    <Button className='contactModalButton' btnSize='btn--wide' children='CONFIRM BOOKING' />
+                    <Button className='contactModalButton' btnSize='btn--wide' children='SUBMIT QUERY' />
             </form>
             
         </div>

@@ -6,6 +6,12 @@
     0 14px 80px rgba(0, 0, 0, 0.2);
 }
 
+.listCards__imageDiv {
+    background-image: url('https://specials-images.forbesimg.com/imageserve/5ecd7e28b0807d0007b48ca8/960x0.jpg?fit=scale');
+    background-position: center;
+    background-size: cover;
+}
+
 .listCards__image {
     object-fit: cover;
     width: 20vw;

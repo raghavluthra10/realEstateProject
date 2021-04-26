@@ -1,29 +1,51 @@
-.listingsPageUltimateContainer {
-    padding: 120px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 120px;
+.listingsPage {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .listingsPageContainer {
-    display: block;
-    width: 400px;
-    box-shadow:
-    0 3.4px 3.6px rgba(0, 0, 0, 0.035),
-    0 9.5px 10px rgba(0, 0, 0, 0.05),
-    0 22.9px 24.1px rgba(0, 0, 0, 0.065),
-    0 76px 80px rgba(0, 0, 0, 0.1);
+   margin-bottom: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 20vw;
+   min-width: 300px;
+   box-shadow:
+   0 3.4px 3.6px rgba(0, 0, 0, 0.035),
+   0 9.5px 10px rgba(0, 0, 0, 0.05),
+   0 22.9px 24.1px rgba(0, 0, 0, 0.065),
+   0 76px 80px rgba(0, 0, 0, 0.1);
  }
 
  .listingsPagePhoto {
     object-fit: cover;
-    width: 400px;
+    object-position: center;
+    width: 100%;
     height: 300px;
  }
 
- .listingsPageInfoContainer {
+ .listingPage__imageDiv {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://specials-images.forbesimg.com/imageserve/5ecd7e28b0807d0007b48ca8/960x0.jpg?fit=scale');
+ }
+
+ .listingsPage__infoDiv {
     font-size: 16px;
     font-weight: bold;
     padding: 15px 10px;
     height: 120px;
+ }
+
+ @media only screen and (max-width: 500px) {
+    .listingsPageContainer {
+       min-width: 250px;
+    }
+
+    .listingsPage__infoDiv {
+       font-size: 14px;
+    }
  }

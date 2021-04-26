@@ -4,6 +4,7 @@ import { FullInfoContext } from '../../FullInfoContext/FullInfoState'
 import './ListingsPage.css';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
+import Footer from '../../components/Footer';
 
 const ListingsPage = (props) => {
 
@@ -17,19 +18,19 @@ const ListingsPage = (props) => {
 
 
     return (
-        <div className='listingsPageUltimateContainer'>
+        <>
+        <div className='listingsPage'>
             {details.length > 1 && console.log('useContext is working!!! yayyyy')}
 
             {details.map((info) => (
                 <>
-                    {info.slice(0,30).map((detail) => (
+                    {info.slice(0,28).map((detail) => (
                                 <div className='listingsPageContainer'>
+                                    <div className='listingPage__imageDiv'>
+                                        <img src={detail.photo} className='listingsPagePhoto' alt={detail.address} />
+                                    </div>
                                     
-                                    <img src={detail.photo} className='listingsPagePhoto' alt={detail.address} />
-                                
-                                    <br/>
-
-                                    <div className='listingsPageInfoContainer'>
+                                    <div className='listingsPage__infoDiv'>
                                         <span className='listingsPageAddress'>
                                             Address: {detail.address}
                                         </span>
@@ -47,25 +48,30 @@ const ListingsPage = (props) => {
                                         </span>
                                     </div>
 
-                                    <Button  destination='/fullInformation' onClick={() => {
-                                        setFullInfo({
-                                            address: detail.address,
-                                            baths: detail.baths,
-                                            beds: detail.beds,
-                                            photo: detail.photo,
-                                            price: detail.price,
-                                            prop_type: detail.prop_type,
-                                            sqft: detail.sqft,
-                                            property_id: detail.property_id
-                                        })
-                                    }} children='Know More' />
+                                    <div className='listingPage__buttonDiv'>
+                                        <Button  destination='/fullInformation' onClick={() => {
+                                            setFullInfo({
+                                                address: detail.address,
+                                                baths: detail.baths,
+                                                beds: detail.beds,
+                                                photo: detail.photo,
+                                                price: detail.price,
+                                                prop_type: detail.prop_type,
+                                                sqft: detail.sqft,
+                                                property_id: detail.property_id
+                                            })
+                                        }} children='Know More' />
+                                    </div>
+
+                                    
                         
                                 </div> 
                     ))}
                 </>
             ))}
         </div>
-        
+        <Footer  />
+        </>
     )
 }
 

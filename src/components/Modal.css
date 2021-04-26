@@ -1,13 +1,26 @@
 .modalContainer {
-    padding: 50px;
-    height: 60vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 60px;
+    height: fit-content;
     width: 50vw;
     border: black solid 1px;
     background-color: whitesmoke;
     position: fixed;
-    transform: translate(-40%, -70%);
+    transform: translate(-18vw, 0px);
     border-radius: 5px;
+    align-self: center;
+}
 
+.modale__form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.modale__form > input{
+    height: 40px;
+    margin-bottom: 15px;
 }
 
 .modalOverlay {
@@ -19,37 +32,38 @@
     right: 0
 }
 
-.modalCloseButton {
-    float: right;
-    font-size: 40px;
+.modalCloseButton{
+    font-size: 30px;
     cursor: pointer;
 }
 
-.modalFName, .modalLName {
-    display: inline;
-    line-height: 50px;
-    font-size: 14px;
-    width: 300px;
-    margin-bottom: 20px;
-    
-}
-
-.modalLName {
-    margin-left: 50px;
-}
-
-.modalEmail, .modalSubject, .modalMessage, .modalButton {
-    line-height: 50px;
-    font-size: 14px;
-    display: block;
-    margin-top: 20px;
-    width: 500px;
+.modalCloseButton :hover {
+    transform: scale(1.07);
+    opacity: 0.8;
 }
 
 .modalButton {
-    background-color: #161619;
-    color: whitesmoke;
-    font-size: 18px;
-    letter-spacing: 10px;
-    height: 50px;
+    margin-top: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1210px){
+    .modalContainer {
+        transform: translate(0vw, -300px);
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .modalContainer {
+        transform: translate(0vw, -200px);
+        min-width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .modalContainer {
+        width: 100vw;
+    }
 }
