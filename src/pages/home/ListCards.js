@@ -4,7 +4,7 @@ import './ListCard.css';
 import { FullInfoContext } from '../../FullInfoContext/FullInfoState'
 import Button from '../../components/Button'
 
-const ListCards = ({ address, photo, price, sqft }) => {
+const ListCards = ({ address, photo, price, sqft, baths, beds, prop_type, property_id  }) => {
 
     // const [ details, setDetails ] = useContext(PropertyContext);
 
@@ -25,7 +25,21 @@ const ListCards = ({ address, photo, price, sqft }) => {
             </div>
 
             <div className='listCards__button'>
-                <Button> Know More </Button>
+                <Button 
+                destination='/fullInformation'
+                onClick={() => {
+                    setFullInfo({
+                        address: address,
+                        baths: baths,
+                        beds: beds,
+                        photo: photo,
+                        price: price,
+                        prop_type: prop_type,
+                        sqft: sqft,
+                        property_id: property_id
+                    })
+                }}
+                > Know More </Button>
             </div>
             
             
