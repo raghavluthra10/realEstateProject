@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutSectionHomePage.css';
-import Button from './Button';
+import Button from '../../components/Button';
 
 const AboutSectionHomePage = () => {
 

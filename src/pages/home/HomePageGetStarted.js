@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomePageGetStarted.css';
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
 const HomePageGetStarted = () => {
     return (
